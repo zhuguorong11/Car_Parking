@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+html,body,div,img,p,ul,li,br {
+	padding: 0;
+	margin: 0;
+}
+
+#iCenter {
+	float: left;
+	width: 800px;
+	height: 580px;
+} 
+
+#iControlbox {
+	float: left;
+	width: 220px;
+	height: 580px;
+	background: #ccc;
+	font-size: 12px;
+}
+
+#result {
+	font-size: 12px;
+	width: 300px;
+	float: left;
+}/*结果*/
+
+#ajaxInfo {
+	display: none;
+}/*停车场的信息栏*/
+
+.lable {
+	position: relative;
+	left: 30px;
+	top: 20px;
+}
+
+#aaa {
+     position: relative;
+     left: 780px;
+}
+
+#aaa li{
+	margin: 10px;
+}
+#logindivmodal{
+	width: 400px;
+}
+#userdiv{
+	width: 300px;
+}
+
+#pwddiv{
+	width: 300px;
+}
+
+#regdivmodal{
+	width: 500px;
+}

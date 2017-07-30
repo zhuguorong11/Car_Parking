@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<constant name="struts.devMode" value="true"></constant>
+	<package name="default"  extends="struts-default,json-default">
+           <action name="excuteAjaxJsonAction" class="action.StrutsTestAction" method="query"> 
+               <result type="json">
+               </result>
+           </action>
+           <action name="updateAjaxJsonAction" class="action.StrutsTestAction" method="update"> 
+               <result type="json">
+               </result>
+           </action>
+           <action name="fenYeAction" class="action.StrutsTestAction" method="fenYe"> 
+               <result type="json">
+               </result>
+           </action>
+           
+           <action name="useRegister" class="action.UserAction" method="register">
+               <result type="json"></result>        
+           </action>
+           
+           <action name="userLogin" class="action.UserAction" method="userLogin"> 
+               <result name="success" type="dispatcher">/searchPark.jsp</result>
+           </action>
+           
+           <action name="userLogout" class="action.UserAction" method="userLogout"> 
+               <result name="success" type="dispatcher">/searchPark.jsp</result>
+           </action>
+           
+           <action name="checkUserName" class="action.UserAction" method="checkUserName"> 
+                <result type="json"></result>   
+           </action>
+   	</package>
+</struts>    
